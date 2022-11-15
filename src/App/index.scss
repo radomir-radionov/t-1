@@ -1,0 +1,61 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  background-image: url("../assets/city.jpg");
+  background-size: cover;
+
+  form {
+    border: 2px solid white;
+    background-color: rgb(190, 189, 189);
+    transform: skew(-40deg);
+    background: rgba(224, 209, 177, 0.8);
+
+    div {
+      transform: skew(40deg);
+    }
+  }
+
+  #data {
+    position: relative;
+    left: 10px;
+    width: 200px;
+    padding: 5px;
+    background-color: transparent;
+  }
+
+  .btn-submit {
+    width: 160px;
+    height: 50px;
+    font-weight: 700;
+    outline: 1px solid white;
+    background-color: red;
+    color: white;
+    transform: skew(-40deg);
+
+    p {
+      display: flex;
+    }
+
+    span {
+      display: block;
+      transform: skew(40deg);
+    }
+  }
+
+  @media (max-width: 600px) {
+    form {
+      transform: skew(0deg);
+      div {
+        transform: skew(0deg);
+      }
+    }
+
+    .btn-submit {
+      transform: skew(0deg);
+      span {
+        transform: skew(0deg);
+      }
+    }
+  }
+}
